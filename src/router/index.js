@@ -17,6 +17,11 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue'),
     },
+    {
+      path: '/activate/:uid/:token',
+      name: 'ActivateAccount',
+      component: () => import('../components/ActivateAccount.vue'),
+    },
   ],
 })
 
